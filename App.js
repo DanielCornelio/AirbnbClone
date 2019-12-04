@@ -7,11 +7,9 @@
  */
 
 import React from 'react';
-import LoggedOut from './src/screens/LoggedOut'
+import LoggedOut from './src/screens/LoggedOut';;
 const App: () => React$Node = () => {
-  return (
-    <LoggedOut/>
-  );
+  return <LoggedOut />;
 };
 
 export default App;
