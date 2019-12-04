@@ -6,7 +6,12 @@ class LoggedOut extends Component {
   render() {
     return (
       <View style={styles.wrapper}>
-        <Image source={require('../img/airbnb-logo.png')} />
+        <View style={styles.welcomeWrapper}>
+          <Image
+            source={require('../img/airbnb-logo.png')}
+            style={styles.logo}
+          />
+        </View>
       </View>
     );
   }
@@ -16,6 +21,18 @@ const styles = StyleSheet.create({
     flex: 1,
     display: 'flex',
     backgroundColor: colors.green01,
+  },
+  welcomeWrapper: {
+    flex: 1,
+    display: 'flex',
+    marginTop: 30,
+    padding: 20,
+  },
+  logo: {
+    width: 50,
+    height: 50,
+    marginTop: 50,
+    marginBottom: 40,
   },
 });
 export default LoggedOut;
