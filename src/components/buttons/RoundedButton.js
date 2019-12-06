@@ -12,7 +12,7 @@ export default class RoundedButton extends Component {
       <TouchableHighlight
         style={[{backgroundColor}, styles.wrapper]}
         onPress={handleOnPress}>
-        <View>
+        <View style={styles.buttonTextWrapper}>
           {icon}
           <Text style={[{color}, styles.buttonText]}>{text}</Text>
         </View>
@@ -21,7 +21,7 @@ export default class RoundedButton extends Component {
   }
 }
 
-RoundedButton.PropTypes = {
+RoundedButton.propTypes = {
   text: PropTypes.string.isRequired,
   textColor: PropTypes.string,
   backgroundColor: PropTypes.string,
@@ -36,6 +36,10 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     borderWidth: 1,
     borderColor: colors.white,
+  },
+  buttonTextWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
   buttonText: {
     fontSize: 16,

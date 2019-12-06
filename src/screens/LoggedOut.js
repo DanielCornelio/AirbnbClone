@@ -56,6 +56,11 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     marginBottom: 40,
   },
-  facebookButtonIcon: {},
+  facebookButtonIcon: {
+    color: colors.green01,
+    position: 'relative',
+    left: 20,
+    zIndex: 8,
+  },
 });
 export default LoggedOut;
