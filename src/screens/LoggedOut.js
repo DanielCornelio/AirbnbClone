@@ -5,6 +5,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import RoundedButton from '../components/buttons/RoundedButton';
 
 class LoggedOut extends Component {
+  onFacebookPress() {
+    alert('Facebook button pressed');
+  }
   render() {
     return (
       <View style={styles.wrapper}>
@@ -23,6 +26,7 @@ class LoggedOut extends Component {
                 name="facebook"
                 size={20}
                 style={styles.facebookButtonIcon}
+                handleOnPress={this.onFacebookPress}
               />
             }
           />
